@@ -1,0 +1,431 @@
+Archive member included because of file (symbol)
+
+d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./MCAL/TIMERS/Timer_Prog.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+TIME_OVF            0x2               ./MCAL/TIMERS/Timer_Prog.o
+G_IntervalCounter   0x4               ./MCAL/TIMERS/Timer_Prog.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./MCAL/TIMERS/Timer_Prog.o
+LOAD ./MCAL/EXTI/EXTI_Prog.o
+LOAD ./MCAL/EXTI/GIE_Prog.o
+LOAD ./MCAL/DIO/DIO.o
+LOAD ./APP/main.o
+LOAD d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xe1e
+ *(.vectors)
+ .vectors       0x00000000       0x54 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x10 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000060                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000070        0x8 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x00000078        0x4 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000078                __vector_1
+                0x00000078                __vector_12
+                0x00000078                __bad_interrupt
+                0x00000078                __vector_6
+                0x00000078                __vector_3
+                0x00000078                __vector_13
+                0x00000078                __vector_17
+                0x00000078                __vector_19
+                0x00000078                __vector_7
+                0x00000078                __vector_5
+                0x00000078                __vector_4
+                0x00000078                __vector_9
+                0x00000078                __vector_2
+                0x00000078                __vector_15
+                0x00000078                __vector_8
+                0x00000078                __vector_14
+                0x00000078                __vector_10
+                0x00000078                __vector_16
+                0x00000078                __vector_18
+                0x00000078                __vector_20
+ .text          0x0000007c        0x0 ./MCAL/TIMERS/Timer_Prog.o
+ .text          0x0000007c        0x0 ./MCAL/EXTI/EXTI_Prog.o
+ .text          0x0000007c        0x0 ./MCAL/EXTI/GIE_Prog.o
+ .text          0x0000007c        0x0 ./MCAL/DIO/DIO.o
+ .text          0x0000007c        0x0 ./APP/main.o
+ .text          0x0000007c        0x0 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x0000007c        0x0 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000007c                . = ALIGN (0x2)
+ *(.text.*)
+ .text.MTIMERS_voidInit
+                0x0000007c       0x22 ./MCAL/TIMERS/Timer_Prog.o
+                0x0000007c                MTIMERS_voidInit
+ .text.MTIMERS_VoidSetIntervals
+                0x0000009e       0x54 ./MCAL/TIMERS/Timer_Prog.o
+                0x0000009e                MTIMERS_VoidSetIntervals
+ .text.MTIMERS_VoidPreLoadval
+                0x000000f2       0x20 ./MCAL/TIMERS/Timer_Prog.o
+                0x000000f2                MTIMERS_VoidPreLoadval
+ .text.MTIMERS_VoidStart
+                0x00000112       0x1e ./MCAL/TIMERS/Timer_Prog.o
+                0x00000112                MTIMERS_VoidStart
+ .text.MTIMERS_VoidStop
+                0x00000130       0x1c ./MCAL/TIMERS/Timer_Prog.o
+                0x00000130                MTIMERS_VoidStop
+ .text.__vector_11
+                0x0000014c       0xba ./MCAL/TIMERS/Timer_Prog.o
+                0x0000014c                __vector_11
+ .text.MEXTI_VoidSenseControl
+                0x00000206      0x200 ./MCAL/EXTI/EXTI_Prog.o
+                0x00000206                MEXTI_VoidSenseControl
+ .text.METI_VoidEnable
+                0x00000406       0x6e ./MCAL/EXTI/EXTI_Prog.o
+                0x00000406                METI_VoidEnable
+ .text.METI_VoidDisEnable
+                0x00000474       0x6e ./MCAL/EXTI/EXTI_Prog.o
+                0x00000474                METI_VoidDisEnable
+ .text.MGIE_VoidEnable
+                0x000004e2       0x1c ./MCAL/EXTI/GIE_Prog.o
+                0x000004e2                MGIE_VoidEnable
+ .text.MGIE_VoidDisEnable
+                0x000004fe       0x1c ./MCAL/EXTI/GIE_Prog.o
+                0x000004fe                MGIE_VoidDisEnable
+ .text.MDIO_VoidSetPortDirection
+                0x0000051a       0x88 ./MCAL/DIO/DIO.o
+                0x0000051a                MDIO_VoidSetPortDirection
+ .text.MDIO_VoidSetPINDirecion
+                0x000005a2      0x244 ./MCAL/DIO/DIO.o
+                0x000005a2                MDIO_VoidSetPINDirecion
+ .text.MDIO_VoidSetPortValue
+                0x000007e6       0x82 ./MCAL/DIO/DIO.o
+                0x000007e6                MDIO_VoidSetPortValue
+ .text.MDIO_VoidSETPortBit
+                0x00000868      0x22c ./MCAL/DIO/DIO.o
+                0x00000868                MDIO_VoidSETPortBit
+ .text.MDIO_VoidSETPinValue
+                0x00000a94      0x22c ./MCAL/DIO/DIO.o
+                0x00000a94                MDIO_VoidSETPinValue
+ .text.MDIO_U8GetPinValue
+                0x00000cc0       0xf2 ./MCAL/DIO/DIO.o
+                0x00000cc0                MDIO_U8GetPinValue
+ .text.toggle   0x00000db2       0x36 ./APP/main.o
+                0x00000db2                toggle
+ .text.main     0x00000de8       0x32 ./APP/main.o
+                0x00000de8                main
+ .text.libgcc   0x00000e1a        0x0 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000e1a        0x0 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000e1a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000e1a        0x0 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000e1a                exit
+                0x00000e1a                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000e1a        0x4 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000e1e                _etext = .
+
+.data           0x00800060        0x0 load address 0x00000e1e
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./MCAL/TIMERS/Timer_Prog.o
+ .data          0x00800060        0x0 ./MCAL/EXTI/EXTI_Prog.o
+ .data          0x00800060        0x0 ./MCAL/EXTI/GIE_Prog.o
+ .data          0x00800060        0x0 ./MCAL/DIO/DIO.o
+ .data          0x00800060        0x0 ./APP/main.o
+ .data          0x00800060        0x0 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060        0xb
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800060        0x0 ./MCAL/TIMERS/Timer_Prog.o
+ .bss           0x00800060        0x0 ./MCAL/EXTI/EXTI_Prog.o
+ .bss           0x00800060        0x0 ./MCAL/EXTI/GIE_Prog.o
+ .bss           0x00800060        0x0 ./MCAL/DIO/DIO.o
+ .bss           0x00800060        0x0 ./APP/main.o
+ .bss           0x00800060        0x0 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800060        0x0 d:/education/iti/tools/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.L_U32Counter.1235
+                0x00800060        0x4 ./MCAL/TIMERS/Timer_Prog.o
+ .bss.flag      0x00800064        0x1 ./APP/main.o
+                0x00800064                flag
+ *(COMMON)
+ COMMON         0x00800065        0x6 ./MCAL/TIMERS/Timer_Prog.o
+                0x00800065                TIME_OVF
+                0x00800067                G_IntervalCounter
+                0x0080006b                PROVIDE (__bss_end, .)
+                0x00000e1e                __data_load_start = LOADADDR (.data)
+                0x00000e1e                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080006b        0x0
+                0x0080006b                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080006b                PROVIDE (__noinit_end, .)
+                0x0080006b                _end = .
+                0x0080006b                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000      0xfcc
+ *(.stab)
+ .stab          0x00000000      0x330 ./MCAL/TIMERS/Timer_Prog.o
+ .stab          0x00000330      0x36c ./MCAL/EXTI/EXTI_Prog.o
+                                0x378 (size before relaxing)
+ .stab          0x0000069c      0x15c ./MCAL/EXTI/GIE_Prog.o
+                                0x1d4 (size before relaxing)
+ .stab          0x000007f8      0x5ac ./MCAL/DIO/DIO.o
+                                0x5b8 (size before relaxing)
+ .stab          0x00000da4      0x228 ./APP/main.o
+                                0x234 (size before relaxing)
+
+.stabstr        0x00000000      0x7ef
+ *(.stabstr)
+ .stabstr       0x00000000      0x7ef ./MCAL/TIMERS/Timer_Prog.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(Timers_DRIVER.elf elf32-avr)
+LOAD linker stubs
